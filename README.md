@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://matiasrma.github.io/Calculator-app/](https://matiasrma.github.io/Calculator-app/)
+- Live Site URL: [https://matiasrma.github.io/Calculator-app/](https://matiasrma.github.io/calculator-app/)
 
 ## My process
 
