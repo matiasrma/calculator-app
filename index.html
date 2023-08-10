@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League%20Spartan%3Aital%2Cwght%400%2C100..900&directory=3&display=block">
+  <title>Frontend Mentor | Calculator app</title>
+  
+</head>
+<body class="theme-1">
+  <main>
+    
+      <div class="col calc-body">
+        <div class="row">
+          <div class="col text">
+            <span id="tittle">calc</span>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col text">
+                <span id="theme-text" onclick="changeTheme(0)">THEME</span>
+              </div>          
+              <div class="col">                          
+                <div class="row selector-numbers">
+                  <span onclick="changeTheme(1)">1</span>
+                  <span onclick="changeTheme(2)">2</span>
+                  <span onclick="changeTheme(3)">3</span>
+                </div>
+                <div class="row">
+                  <div id="selector-body" class="selector-body selector-start">
+                    <div class="toggle" onclick="changeTheme(0)"></div>
+                  </div>
+                </div>              
+              </div>                          
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col display text">
+            <p id="display">0</p>
+          </div>
+        </div>
+        <div class="row calc-buttons">
+          <div class="col">
+            <div class="row">
+              <div class="col btn" id="7" onclick="btnPress(this.id)">7</div>
+              <div class="col btn" id="8" onclick="btnPress(this.id)">8</div>
+              <div class="col btn" id="9" onclick="btnPress(this.id)">9</div>
+              <div class="col btn color" id="Backspace" onclick="btnPress(this.id)">DEL</div>
+            </div>
+            <div class="row">
+              <div class="col btn" id="4" onclick="btnPress(this.id)">4</div>
+              <div class="col btn" id="5" onclick="btnPress(this.id)">5</div>
+              <div class="col btn" id="6" onclick="btnPress(this.id)">6</div>
+              <div class="col btn" id="+" onclick="btnPress(this.id)">+</div>
+            </div>
+            <div class="row">
+              <div class="col btn" id="1" onclick="btnPress(this.id)">1</div>
+              <div class="col btn" id="2" onclick="btnPress(this.id)">2</div>
+              <div class="col btn" id="3" onclick="btnPress(this.id)">3</div>
+              <div class="col btn" id="-" onclick="btnPress(this.id)">-</div>
+            </div>
+            <div class="row">
+              <div class="col btn" id="." onclick="btnPress(this.id)">.</div>
+              <div class="col btn" id="0" onclick="btnPress(this.id)">0</div>
+              <div class="col btn" id="/" onclick="btnPress(this.id)">/</div>
+              <div class="col btn" id="*" onclick="btnPress(this.id)">x</div>
+            </div>
+            <div class="row">            
+              <div class="col btn color" id="Escape" onclick="btnPress(this.id)">RESET</div>
+              <div class="col btn colorToggle" id="Enter" onclick="btnPress(this.id)">=</div>            
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/matiasrma" title="GitHub" target="_blank">Matias Rivas</a>.
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

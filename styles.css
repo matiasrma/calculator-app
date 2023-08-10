@@ -1,0 +1,210 @@
+html {
+    font-family: "League Spartan";
+}
+.theme-1 {
+    --main-background: hsl(222, 26%, 31%);
+    --toggle-background: hsl(223, 31%, 20%);
+    --keypad-background: hsl(223, 31%, 20%);
+    --screen-background: hsl(224, 36%, 15%);    
+
+    --toggle: hsl(6, 63%, 50%);
+
+    --key-background3: hsl(6, 63%, 50%);
+    --key-shadow3: hsl(6, 70%, 34%);
+    --text-key3: hsl(0, 0%, 100%);
+
+    --key-background2: hsl(225, 21%, 49%);
+    --key-shadow2: hsl(224, 28%, 35%);
+    --text-key2: hsl(0, 0%, 100%);   
+
+    --key-background: hsl(45, 7%, 89%);
+    --key-shadow: hsl(35, 11%, 61%);
+    --text-key: hsl(221, 14%, 31%);
+
+    --text: hsl(0, 0%, 100%);
+}
+.theme-2 {
+    --main-background: hsl(0, 0%, 90%);
+    --toggle-background: hsl(0, 5%, 81%);
+    --keypad-background: hsl(0, 5%, 81%);
+    --screen-background: hsl(0, 0%, 93%);
+
+    --toggle: hsl(25, 98%, 40%);
+
+    --key-background3: hsl(25, 98%, 40%);
+    --key-shadow3: hsl(25, 99%, 27%);
+    --text-key3: hsl(0, 0%, 100%);
+
+    --key-background2: hsl(185, 42%, 37%);
+    --key-shadow2: hsl(185, 58%, 25%);
+    --text-key2: hsl(0, 0%, 100%);    
+
+    --key-background: hsl(45, 7%, 89%);
+    --key-shadow: hsl(35, 11%, 61%);
+    --text-key: hsl(221, 14%, 31%);
+    
+    --text: hsl(60, 10%, 19%);
+}
+.theme-3 {
+    --main-background: hsl(268, 75%, 9%);
+    --toggle-background: hsl(268, 71%, 12%);
+    --keypad-background: hsl(268, 71%, 12%);
+    --screen-background: hsl(268, 71%, 12%);
+
+    --toggle: hsl(176, 100%, 44%);
+    
+    --key-background3:hsl(176, 100%, 44%);
+    --key-shadow3: hsl(177, 92%, 70%);
+    --text-key3: hsl(268, 71%, 12%);
+
+    --key-background2:hsl(281, 89%, 26%);
+    --key-shadow2: hsl(285, 91%, 52%);
+    --text-key2: hsl(52, 100%, 62%);
+
+    --key-background:hsl(268, 47%, 21%);
+    --key-shadow: hsl(290, 70%, 36%);
+    --text-key: hsl(52, 100%, 62%);
+
+    --text: hsl(52, 100%, 62%);
+}
+::-webkit-scrollbar{ display: none;}
+
+body{    
+    background-color: var(--main-background);                
+}
+footer{
+    margin-top: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    min-height: calc(80vh);
+}
+
+
+.calc-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    max-width: 350px;         
+}
+
+.row {
+    flex: 1;    
+    display: flex;
+    flex-direction: row;    
+}
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;    
+}
+
+#tittle {
+    font-size: larger;
+}
+#theme-text{
+    font-size: x-small;
+    cursor: pointer;   
+    margin-left: 50%;
+}
+span {
+    color: var(--text);
+    font-weight: 700;
+}
+.text {    
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+}
+.selector-numbers {
+    justify-content:space-around;
+}
+.selector-numbers > span {
+    cursor: pointer;
+}
+.selector-body {
+    background-color: var(--toggle-background);
+    border-radius: 15px;
+    min-height: 12px;
+    width: 100%;
+    display: flex;
+    margin-inline: 6px;    
+}
+.selector-start {
+    justify-content: flex-start;
+}
+.selector-center {
+    justify-content: center;
+}
+.selector-end {
+    justify-content: flex-end;
+}
+.toggle{
+    background-color: var(--toggle);
+    border-radius: 100%;
+    height: 12px;
+    width: 12px; 
+    margin: 2px;       
+    cursor: pointer;
+}
+.display {
+    justify-content: flex-end;
+    padding-inline: 20px;
+    background-color: var(--screen-background);
+    margin-block: 10px;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+.display > p{
+    font-size: 40px;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.calc-buttons{
+    padding: 10px;
+    background-color: var(--keypad-background);
+    border-radius: 5px;
+}
+
+.btn {
+    color: var(--text-key);
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;    
+    background-color: var(--key-background);
+    margin-inline: 5px;    
+    margin-block: 7px;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 0 var(--key-shadow);
+    cursor: pointer;
+    padding-top: 7px;
+}
+.btn:active {
+    box-shadow: 0 0 0 0;
+    transform: scaleX(0.97);
+}
+.btn:hover, .toggle:hover, .text>span:hover {
+    filter: brightness(1.4);
+}
+.color{
+    color: var(--text-key2);
+    background-color: var(--key-background2);
+    box-shadow: 0 2px 0 0 var(--key-shadow2);
+    font-size: 24px;
+    padding-top: 3px;
+}
+.colorToggle {
+    color: var(--text-key3);
+    background-color: var(--key-background3);
+    box-shadow: 0 2px 0 0 var(--key-shadow3);    
+}
+
+.attribution { font-size: 11px; text-align: center; color: var(--text); }
+.attribution a { color: var(--toggle); }
