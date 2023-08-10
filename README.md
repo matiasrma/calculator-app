@@ -47,5 +47,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Matias Rivas Portfolio](https://matiasrivas-portfolio.web.app/)
 - Frontend Mentor - [@matiasrma](https://www.frontendmentor.io/profile/yourusername)
