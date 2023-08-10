@@ -48,4 +48,4 @@ Users should be able to:
 ## Author
 
 - Website - [Matias Rivas Portfolio](https://matiasrivas-portfolio.web.app/)
-- Frontend Mentor - [@matiasrma](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [matiasrma](https://www.frontendmentor.io/profile/matiasrma)
